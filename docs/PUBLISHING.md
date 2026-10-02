@@ -11,9 +11,9 @@ Checklist for the first public release of Hollow Knight Local8.
 
 ## Before making the repository public
 
-- [ ] Add the complete Local8 source code that matches the v0.9.0 release candidate.
-- [ ] Make sure no original Hollow Knight files or Team Cherry assemblies are committed.
-- [ ] Remove temporary development files, private paths and unnecessary debug artifacts.
+- [x] Add the v0.9.0 recovered source tree.
+- [x] Make sure no original Hollow Knight files or Team Cherry assemblies are committed.
+- [x] Remove temporary development files, private paths and unnecessary debug artifacts.
 - [ ] Confirm the project builds from a clean checkout.
 - [ ] Test the final DLL on the target Hollow Knight version.
 - [ ] Test manual installation from the final ZIP.
