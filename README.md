@@ -8,9 +8,9 @@ The goal is to make Hollow Knight feel like a real cooperative game rather than 
 
 P1 remains Hollow Knight's original player, while P2–P8 are added to that same world with their own controls, movement, combat, health, Soul, HUD, charms and appearance.
 
-> **First public release planned: v0.9.0**  
+> **Current public version: v0.9.0**  
 > Target game version: **Hollow Knight 1.5.78.11833**  
-> The current release candidate is based on internal build 139.
+> v0.9.0 is based on internal build 139.
 
 ## What makes Local8 different
 
@@ -95,13 +95,13 @@ See [Compatibility](docs/COMPATIBILITY.md) for more information.
 
 ## Installation
 
-The recommended installation method will be **Lumafly** once Local8 is accepted into ModLinks.
+v0.9.0 is available now from [GitHub Releases](https://github.com/RaulSB-code/HollowKnight-Local8/releases/tag/v0.9.0).
 
-Manual installation will also be available through GitHub Releases. See [Installation](docs/INSTALLATION.md).
+The recommended installation method will be **Lumafly** once Local8 is accepted into ModLinks. See [Installation](docs/INSTALLATION.md).
 
 ## Development status
 
-v0.9.0 is intended to be the first public version of Local8.
+v0.9.0 is the first public version of Local8.
 
 The mod is playable, but it is still under active development. Larger 6–8 player sessions, performance, endings, unusual interactions and compatibility with large content mods will continue to receive testing and fixes.
 
@@ -113,7 +113,7 @@ If possible, also attach the Local8 log and a screenshot or video.
 
 ## Source and releases
 
-Public builds will be distributed through GitHub Releases and, after acceptance into ModLinks, through Lumafly.
+Public builds are distributed through GitHub Releases and, after acceptance into ModLinks, will also be available through Lumafly.
 
 The complete Local8 source code will be added to this repository before the ModLinks submission. Original Hollow Knight game files and Team Cherry assemblies will not be included.
 
