@@ -1,0 +1,55 @@
+name: Source recovery alpha139
+on:
+  push:
+    branches:
+      - source-recovery-alpha139
+
+permissions:
+  contents: read
+
+jobs:
+  recover-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Download v0.9.0 release
+        run: |
+          curl -L --fail "https://github.com/RaulSB-code/HollowKnight-Local8/releases/download/v0.9.0/HollowKnightLocal8-v0.9.0.zip" -o release.zip
+          mkdir -p release
+          unzip -q release.zip -d release
+          find release -maxdepth 3 -type f -print
+
+      - name: Install ILSpy command line
+        run: dotnet tool install --global ilspycmd --version 9.1.0.7988
+
+      - name: Decompile current DLL
+        run: |
+          DLL="$(find release -type f -iname 'HollowKnightLocal8*.dll' | head -n 1)"
+          test -n "$DLL"
+          mkdir -p recovered
+          ilspycmd -p -o recovered "$DLL"
+          cp "$DLL" recovered/HollowKnightLocal8-alpha139-authoritative.dll
+          cat > recovered/SOURCE_RECOVERY.md <<'EOF'
+          # Source recovery
+
+          This source tree was decompiled from the exact HollowKnightLocal8 DLL published in release v0.9.0 / development build alpha139.
+
+          The alpha139 binary is authoritative. Later development builds were produced through direct IL/binary patching, so the original high-level C# source corresponding byte-for-byte to alpha139 was not preserved.
+
+          This recovered tree is intended to restore a maintainable C# baseline for the repository. Review and clean decompiler artifacts before treating it as hand-authored source.
+          EOF
+          zip -qr HollowKnightLocal8-alpha139-recovered-source.zip recovered
+
+      - name: Upload recovered source
+        uses: actions/upload-artifact@v4
+        with:
+          name: HollowKnightLocal8-alpha139-recovered-source
+          path: HollowKnightLocal8-alpha139-recovered-source.zip
+          if-no-files-found: error
