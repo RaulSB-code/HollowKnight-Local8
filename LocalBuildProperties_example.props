@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <References>C:\Path\To\Hollow Knight\hollow_knight_Data\Managed</References>
+  </PropertyGroup>
+</Project>
