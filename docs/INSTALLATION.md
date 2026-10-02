@@ -1,6 +1,6 @@
 # Installation
 
-Local8 v0.9.0 is being prepared as the first public release.
+Local8 v0.9.0 is the first public release.
 
 ## Lumafly
 
@@ -11,7 +11,7 @@ Search for **Hollow Knight Local8** in Lumafly and install it normally. Lumafly 
 ## Manual installation
 
 1. Install the Hollow Knight Modding API.
-2. Download `HollowKnightLocal8-v0.9.0.zip` from the GitHub Releases page.
+2. Download `HollowKnightLocal8-v0.9.0.zip` from the [v0.9.0 GitHub Release](https://github.com/RaulSB-code/HollowKnight-Local8/releases/tag/v0.9.0).
 3. Extract it into the Hollow Knight `Mods` folder so the result is:
 
 ```text
