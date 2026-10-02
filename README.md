@@ -115,7 +115,7 @@ If possible, also attach the Local8 log and a screenshot or video.
 
 Public builds are distributed through GitHub Releases and, after acceptance into ModLinks, will also be available through Lumafly.
 
-The v0.9.0 source is included in this repository. See [Building from source](docs/BUILDING.md) and [v0.9.0 source notes](docs/SOURCE_NOTES_v0.9.0.md). Original Hollow Knight game files and Team Cherry assemblies are not included.
+The v0.9.0 project files and source documentation are prepared here. The recovered `src` tree still needs to be committed before the repository is made public. See [Building from source](docs/BUILDING.md) and [v0.9.0 source notes](docs/SOURCE_NOTES_v0.9.0.md). Original Hollow Knight game files and Team Cherry assemblies are not included.
 
 ## Author
 
