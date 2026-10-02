@@ -8,7 +8,9 @@ assignees: ""
 
 ## Local8 version
 
-Example: alpha90
+Example: v0.9.0
+
+If shown in the log, also include the internal build number.
 
 ## Hollow Knight version
 
@@ -16,7 +18,7 @@ Example: alpha90
 
 ## Controllers / input devices
 
-Describe which controllers, keyboard, vJoy or other input devices were in use.
+Describe which controllers, keyboard profiles, vJoy or other input devices were in use.
 
 ## Other enabled mods
 
