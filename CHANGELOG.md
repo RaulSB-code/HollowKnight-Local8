@@ -2,7 +2,7 @@
 
 All notable public changes to Hollow Knight Local8 will be documented here.
 
-## v0.9.0 - Upcoming
+## v0.9.0 - 2026-10-02
 
 First public release of Hollow Knight Local8.
 
