@@ -24,6 +24,16 @@ Checklist for the first public release of Hollow Knight Local8.
 
 ## GitHub Release v0.9.0
 
+Published on 2026-10-02.
+
+- Release: https://github.com/RaulSB-code/HollowKnight-Local8/releases/tag/v0.9.0
+- Asset: `HollowKnightLocal8-v0.9.0.zip`
+- SHA-256: `4eaf5176d980c1bf9e7d090e66d0657ead5c3d304b115fc21e3779bfef0cdd49`
+
+Release package verified against GitHub's asset digest.
+
+For future releases:
+
 1. Build the exact DLL intended for public distribution.
 2. Rename the public package to:
    `HollowKnightLocal8-v0.9.0.zip`
