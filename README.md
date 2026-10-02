@@ -4,34 +4,32 @@
 
 Hollow Knight Local8 is a local multiplayer mod for **2–8 players on the same PC**.
 
-The main goal is to make Hollow Knight feel like a real cooperative game rather than simply adding extra Knights on screen. Every player exists inside the same running game: they explore the same rooms, fight the same enemies and bosses, interact with the same world and share the same progression.
+The goal is to make Hollow Knight feel like a real cooperative game rather than simply adding extra Knights on screen. Every player exists inside the same running game: they explore the same rooms, fight the same enemies and bosses, interact with the same world and share the same progression.
 
 P1 remains Hollow Knight's original player, while P2–P8 are added to that same world with their own controls, movement, combat, health, Soul, HUD, charms and appearance.
 
-> **Status:** Alpha / work in progress  
-> Current development is focused on Hollow Knight **1.5.78.11833**.  
-> Local8 is not yet published on Lumafly or ModLinks.
+> **First public release planned: v0.9.0**  
+> Target game version: **Hollow Knight 1.5.78.11833**  
+> The current release candidate is based on internal build 139.
 
 ## What makes Local8 different
 
 Local8 uses a single Hollow Knight game instance for the whole group.
 
-That means an enemy being attacked by P1 is the same enemy being attacked by P2–P8. The same applies to bosses, rooms, NPCs, objects, events and progression.
+An enemy being attacked by P1 is the same enemy being attacked by P2–P8. The same applies to bosses, rooms, NPCs, objects, events and progression.
 
-This is the core idea behind the project: adapt Hollow Knight's original single-player systems so several players can take part in the same adventure together.
+The core of the project is adapting Hollow Knight's original single-player systems so several players can take part in the same adventure together.
 
 ## Main features
 
 - 2–8 local players in one Hollow Knight game.
 - Shared enemies, bosses, world and progression.
-- Independent movement and combat.
-- Independent health and Soul.
-- Individual HUD for P1–P8.
-- Player colors and optional P1–P8 labels.
+- Independent movement, combat, health and Soul.
+- Individual HUD, player colors and optional P1–P8 labels.
 - Controller support.
 - Up to four simultaneous keyboard players with separate key profiles.
 - Keyboard control editor for additional players.
-- vJoy / DirectInput support for testing and virtual controllers.
+- vJoy / DirectInput support for virtual controllers and testing.
 - Players can join and leave during a session.
 - Adaptive cooperative camera and zoom.
 - Group waiting and recovery systems for room transitions.
@@ -65,9 +63,9 @@ PvP settings include separate control over nail damage, spells, Nail Arts and so
 
 P1 keeps the normal Hollow Knight controls.
 
-Additional players can use controllers or keyboard profiles. Local8 can support several keyboard players at the same time, each with their own configurable bindings.
+Additional players can use controllers or keyboard profiles. Several keyboard players can play at the same time, each with their own configurable bindings.
 
-The F8 menu is used to manage players, controls, camera behaviour, difficulty, PvP, recovery systems, lighting, performance options and other multiplayer settings.
+The F8 menu manages players, controls, camera behaviour, difficulty, PvP, recovery systems, lighting, performance options and other multiplayer settings.
 
 ## Recommended mods
 
@@ -77,13 +75,13 @@ Local8 works on its own, but two mods are especially useful alongside it.
 
 **Custom Knight is highly recommended.**
 
-Local8 can detect Custom Knight and use installed skins for individual players. Different skins make players much easier to identify when several Knights are on screen.
+Local8 can detect Custom Knight and use installed skins for individual players. Different skins also make players much easier to identify when several Knights are on screen.
 
 ### Enemy HP Bar
 
 **Enemy HP Bar is also recommended**, especially for larger groups.
 
-Because everyone is fighting the same enemies and bosses, visible health bars make group fights easier to follow.
+Because everyone fights the same enemies and bosses, visible health bars make group fights easier to follow.
 
 ## Compatibility with other mods
 
@@ -91,17 +89,21 @@ Compatibility with the wider Hollow Knight modding ecosystem is one of the goals
 
 Custom Knight already has specific support. Other mods may work without changes, while larger content mods can require extra work because they add new rooms, bosses, interactions or scripted events.
 
-**Pale Court is currently being tested.** Parts of it already work with Local8, but compatibility is still experimental and multiplayer-specific problems are expected.
+**Pale Court is currently experimental.** Parts of it already work with Local8, but multiplayer-specific problems are still expected.
 
-See [Compatibility](docs/COMPATIBILITY.md) for the current status.
+See [Compatibility](docs/COMPATIBILITY.md) for more information.
+
+## Installation
+
+The recommended installation method will be **Lumafly** once Local8 is accepted into ModLinks.
+
+Manual installation will also be available through GitHub Releases. See [Installation](docs/INSTALLATION.md).
 
 ## Development status
 
-Local8 is still in active development. The current project base is **alpha139**, but it should not yet be considered a stable public release.
+v0.9.0 is intended to be the first public version of Local8.
 
-Testing is still needed in areas such as 6–8 player sessions, performance, endings and some special interactions.
-
-The project will be prepared for GitHub Releases and ModLinks/Lumafly once a sufficiently tested build is ready.
+The mod is playable, but it is still under active development. Larger 6–8 player sessions, performance, endings, unusual interactions and compatibility with large content mods will continue to receive testing and fixes.
 
 ## Bug reports
 
@@ -111,11 +113,9 @@ If possible, also attach the Local8 log and a screenshot or video.
 
 ## Source and releases
 
-The source code will be added and organised here before the public release.
+Public builds will be distributed through GitHub Releases and, after acceptance into ModLinks, through Lumafly.
 
-Original Hollow Knight game files and Team Cherry assemblies will not be included in this repository.
-
-Stable builds will eventually be distributed through GitHub Releases and prepared for installation through ModLinks/Lumafly.
+The complete Local8 source code will be added to this repository before the ModLinks submission. Original Hollow Knight game files and Team Cherry assemblies will not be included.
 
 ## Author
 
