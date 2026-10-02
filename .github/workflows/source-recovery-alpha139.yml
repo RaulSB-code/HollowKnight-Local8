@@ -20,8 +20,14 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Download v0.9.0 release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          curl -L --fail "https://github.com/RaulSB-code/HollowKnight-Local8/releases/download/v0.9.0/HollowKnightLocal8-v0.9.0.zip" -o release.zip
+          curl -L --fail \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/octet-stream" \
+            "https://api.github.com/repos/RaulSB-code/HollowKnight-Local8/releases/assets/606203224" \
+            -o release.zip
           mkdir -p release
           unzip -q release.zip -d release
           find release -maxdepth 3 -type f -print
