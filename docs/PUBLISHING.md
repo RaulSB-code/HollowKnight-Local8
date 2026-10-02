@@ -1,57 +1,63 @@
 # Publishing Local8
 
-This document is a preparation checklist for the eventual public release of Hollow Knight Local8.
+Checklist for the first public release of Hollow Knight Local8.
 
-## Before publishing
+## Target release
 
-- [ ] Remove private/debug-only code and temporary files.
-- [ ] Make sure no original Hollow Knight game files or Team Cherry assemblies are committed.
-- [ ] Add the complete Local8 source code.
+- Public version: **v0.9.0**
+- Internal release candidate: **build 139**
+- Target Hollow Knight version: **1.5.78.11833**
+- Release package: **HollowKnightLocal8-v0.9.0.zip**
+
+## Before making the repository public
+
+- [ ] Add the complete Local8 source code that matches the v0.9.0 release candidate.
+- [ ] Make sure no original Hollow Knight files or Team Cherry assemblies are committed.
+- [ ] Remove temporary development files, private paths and unnecessary debug artifacts.
 - [ ] Confirm the project builds from a clean checkout.
-- [ ] Test the intended supported Hollow Knight version.
-- [ ] Test installation without development-only files.
-- [ ] Update README.md.
-- [ ] Update CHANGELOG.md.
-- [ ] Choose a license before making the source repository public, if desired.
+- [ ] Test the final DLL on the target Hollow Knight version.
+- [ ] Test manual installation from the final ZIP.
+- [x] Prepare README and feature documentation.
+- [x] Prepare compatibility documentation.
+- [x] Prepare bug report template.
+- [ ] Decide whether to add a source-code license before publication.
 
-## GitHub release
+## GitHub Release v0.9.0
 
-For the first stable public release:
-
-1. Choose a numeric version such as `1.0.0`.
-2. Build the release version.
-3. Create a clean ZIP containing only the files users need.
-4. Suggested filename:
-   `HollowKnightLocal8-v1.0.0.zip`
-5. Create a GitHub Release tagged:
-   `v1.0.0`
-6. Attach the ZIP to that release.
-7. Calculate the SHA-256 of the exact ZIP that users will download.
-
-Do not calculate the ModLinks hash from a different DLL or ZIP.
-
-## ModLinks / Lumafly
-
-When the release is ready:
-
-- [ ] Make the repository accessible as required by the Hollow Knight modding community.
-- [ ] Check the current ModLinks contribution requirements.
-- [ ] Add the Local8 entry using the current ModLinks manifest format.
-- [ ] Use the GitHub Release download URL.
-- [ ] Use the SHA-256 of that exact release ZIP.
-- [ ] Point the manifest to this repository and README.
-- [ ] Submit the ModLinks pull request.
-- [ ] After it is accepted, verify that Local8 appears and installs correctly through Lumafly.
-
-The ModLinks format and requirements can change, so they should be checked again immediately before submission.
-
-## Recommended release contents
-
-A public release ZIP should be kept minimal. For example:
+1. Build the exact DLL intended for public distribution.
+2. Rename the public package to:
+   `HollowKnightLocal8-v0.9.0.zip`
+3. Keep the ZIP minimal:
 
 ```text
-HollowKnightLocal8-v1.0.0.zip
+HollowKnightLocal8-v0.9.0.zip
 └── HollowKnightLocal8.dll
 ```
 
-If Local8 later needs additional runtime files, include only those required by the mod.
+4. Create the GitHub tag:
+   `v0.9.0`
+5. Create the GitHub Release:
+   `Hollow Knight Local8 v0.9.0`
+6. Attach the exact ZIP.
+7. Calculate the SHA-256 of that exact uploaded ZIP.
+8. Verify the release download before submitting to ModLinks.
+
+## ModLinks / Lumafly
+
+Current ModLinks requirements include having the mod source code available in a Git repository.
+
+The Local8 entry should use:
+
+- Name: `HollowKnightLocal8`
+- Display name: `Hollow Knight Local8`
+- Version: `0.9.0.0`
+- GitHub Release download URL for the final ZIP.
+- SHA-256 of that exact ZIP.
+- Repository link to this project.
+- README link.
+- Issues link.
+- Gameplay tag.
+- Custom Knight as an integration.
+- Enemy HP Bar can be documented as recommended; it does not need to be a required dependency.
+
+After the ModLinks pull request is accepted, verify that Local8 appears in Lumafly and performs a clean install.
