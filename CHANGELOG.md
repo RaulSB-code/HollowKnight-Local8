@@ -2,26 +2,29 @@
 
 All notable public changes to Hollow Knight Local8 will be documented here.
 
-## Unreleased
+## v0.9.0 - Upcoming
 
-### Current development base
+First public release of Hollow Knight Local8.
 
-- alpha139 is the current project base.
-- Repository documentation expanded to describe the current multiplayer systems.
-- Local8 remains an alpha and is not yet published through ModLinks/Lumafly.
+Main features include:
 
-### Public release preparation
+- 2–8 local players in one shared Hollow Knight game.
+- Shared enemies, bosses, world and progression.
+- Independent health, Soul, controls, HUD and charms.
+- Controller and multi-keyboard support.
+- Adaptive cooperative camera and group transitions.
+- Revive, respawn and rescue systems.
+- Co-op, Friendly Fire and Round Duels.
+- Difficulty scaling for multiple players.
+- Custom Knight integration.
+- Cooperative lighting and visibility options.
+- Multi-language interface.
+- Experimental compatibility work with larger content mods such as Pale Court.
 
-- Source code still needs to be organised and added.
-- Installation instructions will be added when the public package format is final.
-- Compatibility testing is continuing, including larger content mods.
+The v0.9.0 release candidate is based on internal build 139.
 
 ## Versioning
 
-Development builds use alpha identifiers.
+Public releases use normal version numbers such as `v0.9.0`.
 
-Stable public releases will use numeric versions such as:
-
-- 1.0.0
-- 1.1.0
-- 1.1.1
+Internal development builds may continue to use build numbers separately from the public version.
