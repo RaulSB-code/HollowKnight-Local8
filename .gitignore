@@ -427,3 +427,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+# Hollow Knight Local8 local build files
+LocalBuildProperties.props
+*.dll
