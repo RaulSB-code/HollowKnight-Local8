@@ -1,4 +1,4 @@
-# Local8 Features
+# Hollow Knight 8-Player Co-op Features
 
 This page gives a little more detail about the main multiplayer systems without listing development history or old bug fixes.
 
@@ -32,7 +32,7 @@ Players can be added or removed during a session.
 
 ## Input
 
-Local8 supports normal controllers and additional keyboard players.
+The mod supports normal controllers and additional keyboard players.
 
 Up to four keyboard profiles can be active at once, with configurable bindings for each profile. P1 keeps Hollow Knight's normal controls.
 
@@ -42,7 +42,7 @@ vJoy / DirectInput support is also available for virtual-controller testing.
 
 The cooperative camera tries to keep the active group visible and changes zoom depending on how far players are separated.
 
-Local8 also contains systems for:
+The mod also contains systems for:
 
 - Waiting for the group during room changes.
 - Recovering players who become separated.
@@ -76,7 +76,7 @@ Players who are currently down do not count as active players for this scaling.
 
 ## PvP
 
-Local8 includes three main play styles:
+The mod includes three main play styles:
 
 - Co-op.
 - Friendly Fire.
@@ -94,7 +94,7 @@ This includes work around benches, doors, transitions, NPC interactions, boss ar
 
 ## Lighting and visibility
 
-Local8 includes cooperative lighting for dark areas.
+The mod includes cooperative lighting for dark areas.
 
 Additional player lights can be enabled or disabled, and a Full Visibility option can remove darkness from supported rooms when preferred.
 
