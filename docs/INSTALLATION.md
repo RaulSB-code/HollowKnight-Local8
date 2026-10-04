@@ -1,12 +1,12 @@
 # Installation
 
-Local8 v0.9.0 is the first public release.
+Hollow Knight 8-Player Co-op v0.9.0 is the first public release.
 
 ## Lumafly
 
-Once Local8 is accepted into ModLinks, Lumafly will be the recommended installation method.
+Once Hollow Knight 8-Player Co-op is accepted into ModLinks, Lumafly will be the recommended installation method.
 
-Search for **Hollow Knight Local8** in Lumafly and install it normally. Lumafly will manage the mod folder and future updates.
+Search for **Hollow Knight 8-Player Co-op** in Lumafly and install it normally. Lumafly will manage the mod folder and future updates.
 
 ## Manual installation
 
