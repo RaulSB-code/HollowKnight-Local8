@@ -1,6 +1,6 @@
-# Publishing Local8
+# Publishing Hollow Knight 8-Player Co-op
 
-Checklist for the first public release of Hollow Knight Local8.
+Checklist for the first public release of Hollow Knight 8-Player Co-op.
 
 ## Target release
 
@@ -47,7 +47,7 @@ HollowKnightLocal8-v0.9.0.zip
 4. Create the GitHub tag:
    `v0.9.0`
 5. Create the GitHub Release:
-   `Hollow Knight Local8 v0.9.0`
+   `Hollow Knight 8-Player Co-op v0.9.0`
 6. Attach the exact ZIP.
 7. Calculate the SHA-256 of that exact uploaded ZIP.
 8. Verify the release download before submitting to ModLinks.
@@ -56,10 +56,10 @@ HollowKnightLocal8-v0.9.0.zip
 
 Current ModLinks requirements include having the mod source code available in a Git repository.
 
-The Local8 entry should use:
+The ModLinks entry should use:
 
-- Name: `HollowKnightLocal8`
-- Display name: `Hollow Knight Local8`
+- Name: `Hollow Knight 8-Player Co-op`
+- Display name: `Hollow Knight 8-Player Co-op`
 - Version: `0.9.0.0`
 - GitHub Release download URL for the final ZIP.
 - SHA-256 of that exact ZIP.
@@ -70,4 +70,4 @@ The Local8 entry should use:
 - Custom Knight as an integration.
 - Enemy HP Bar can be documented as recommended; it does not need to be a required dependency.
 
-After the ModLinks pull request is accepted, verify that Local8 appears in Lumafly and performs a clean install.
+After the ModLinks pull request is accepted, verify that Hollow Knight 8-Player Co-op appears in Lumafly and performs a clean install.
