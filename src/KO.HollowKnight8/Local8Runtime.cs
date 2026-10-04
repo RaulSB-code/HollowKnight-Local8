@@ -338,7 +338,7 @@ public sealed class Local8Runtime : MonoBehaviour
 			((Loggable)Local8Mod.Instance).LogError((object)ex);
 		}
 		Diagnostics.Write("FATAL " + ex);
-		Notice("Local8 detenido por un error. Envia la carpeta Local8-Logs.");
+		Notice("Hollow Knight 8-Player Co-op detenido por un error. Envia la carpeta Local8-Logs.");
 		if (Session != null)
 		{
 			Session.Dispose();
