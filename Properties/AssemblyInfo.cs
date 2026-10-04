@@ -1,3 +1,3 @@
 using System.Reflection;
 
-[assembly: AssemblyTitle("HollowKnightLocal8")]
+[assembly: AssemblyTitle("Hollow Knight 8-Player Co-op")]
