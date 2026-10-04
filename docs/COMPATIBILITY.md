@@ -1,6 +1,6 @@
 # Mod Compatibility
 
-Local8 is being developed with compatibility with other Hollow Knight mods in mind.
+Hollow Knight 8-Player Co-op is being developed with compatibility with other Hollow Knight mods in mind.
 
 Compatibility can vary because larger mods may introduce custom rooms, enemies, bosses, interactions and scripted sequences that were not designed for multiple local players.
 
@@ -8,26 +8,26 @@ Compatibility can vary because larger mods may introduce custom rooms, enemies, 
 
 ### Custom Knight
 
-Recommended for Local8.
+Recommended for Hollow Knight 8-Player Co-op.
 
-Local8 can detect Custom Knight and use installed skins for individual players. This is useful both for customization and for identifying players during crowded sessions.
+The mod can detect Custom Knight and use installed skins for individual players. This is useful both for customization and for identifying players during crowded sessions.
 
 ### Enemy HP Bar
 
 Recommended, especially with larger groups.
 
-Every Local8 player attacks the same enemies and bosses, so visible enemy health bars make fights easier for the whole group to read.
+Every player attacks the same enemies and bosses, so visible enemy health bars make fights easier for the whole group to read.
 
 ## Experimental
 
 ### Pale Court
 
-Pale Court is currently being tested with Local8.
+Pale Court is currently being tested with Hollow Knight 8-Player Co-op.
 
 Parts of the mod already work, but support is still experimental and multiplayer-specific problems are expected. It should not yet be treated as fully compatible.
 
 ## Future compatibility
 
-Other Hollow Knight mods will continue to be tested as Local8 approaches a public release.
+Other Hollow Knight mods will continue to be tested as Hollow Knight 8-Player Co-op continues development.
 
-Mods that only make simple visual or interface changes are generally easier to support. Large content mods may require specific Local8 handling.
+Mods that only make simple visual or interface changes are generally easier to support. Large content mods may require specific multiplayer handling.
