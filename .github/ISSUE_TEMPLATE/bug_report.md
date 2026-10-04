@@ -1,12 +1,12 @@
 ---
 name: Bug report
-about: Report a problem with Hollow Knight Local8
+about: Report a problem with Hollow Knight 8-Player Co-op
 title: "[BUG] "
 labels: ""
 assignees: ""
 ---
 
-## Local8 version
+## Hollow Knight 8-Player Co-op version
 
 Example: v0.9.0
 
@@ -44,7 +44,7 @@ What should have happened instead?
 
 ## Log
 
-Attach the Local8 log if available.
+Attach the mod log if available.
 
 ## Screenshots / video
 
