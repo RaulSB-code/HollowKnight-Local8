@@ -36,7 +36,7 @@ public sealed class Local8Mod : Mod, IGlobalSettings<Local8Settings>, ILocalSett
 	}
 
 	public Local8Mod()
-		: base("Hollow Knight Local 8")
+		: base("Hollow Knight 8-Player Co-op")
 	{
 		Instance = this;
 	}
@@ -56,11 +56,11 @@ public sealed class Local8Mod : Mod, IGlobalSettings<Local8Settings>, ILocalSett
 		if (!Object.op_Implicit((Object)(object)runtime))
 		{
 			Settings.Ensure();
-			GameObject val = new GameObject("Hollow Knight Local 8");
+			GameObject val = new GameObject("Hollow Knight 8-Player Co-op");
 			Object.DontDestroyOnLoad((Object)(object)val);
 			runtime = val.AddComponent<Local8Runtime>();
 			runtime.Boot(this);
-			((Loggable)this).Log("Local8 0.3.47-bg111xx cargado para Hollow Knight 1.5.78.11833 / Modding API.");
+			((Loggable)this).Log("Hollow Knight 8-Player Co-op 0.3.47-bg111xx cargado para Hollow Knight 1.5.78.11833 / Modding API.");
 		}
 	}
 
@@ -95,7 +95,7 @@ public sealed class Local8Mod : Mod, IGlobalSettings<Local8Settings>, ILocalSett
 		KeyCode[] panelKeys = MenuInput.Choices;
 		string[] array = Array.ConvertAll(panelKeys, MenuInput.Display);
 		List<MenuEntry> list = new List<MenuEntry>();
-		list.Add(new MenuEntry("Interfaz Local8", new string[2] { "Mascaras y alma", "Basica" }, "Se adapta automaticamente al numero de jugadores.", (Action<int>)delegate(int i)
+		list.Add(new MenuEntry("Interfaz 8-Player Co-op", new string[2] { "Mascaras y alma", "Basica" }, "Se adapta automaticamente al numero de jugadores.", (Action<int>)delegate(int i)
 		{
 			Settings.BasicHUD = i == 1;
 			if (Object.op_Implicit((Object)(object)runtime))
@@ -127,7 +127,7 @@ public sealed class Local8Mod : Mod, IGlobalSettings<Local8Settings>, ILocalSett
 				runtime.TimedRespawn.Value = i == 1;
 			}
 		}, (Func<int>)(() => ((!Object.op_Implicit((Object)(object)runtime)) ? Settings.TimedRespawn : runtime.TimedRespawn.Value) ? 1 : 0)));
-		list.Add(new MenuEntry("Dificultad Local8", new string[4] { "Easy", "Normal", "Hard", "Extreme" }, "Ajusta el dano del grupo a la cantidad de jugadores.", (Action<int>)delegate(int i)
+		list.Add(new MenuEntry("Dificultad 8-Player Co-op", new string[4] { "Easy", "Normal", "Hard", "Extreme" }, "Ajusta el dano del grupo a la cantidad de jugadores.", (Action<int>)delegate(int i)
 		{
 			Settings.Difficulty = Mathf.Clamp(i, 0, 3);
 			if (Object.op_Implicit((Object)(object)runtime))
@@ -135,7 +135,7 @@ public sealed class Local8Mod : Mod, IGlobalSettings<Local8Settings>, ILocalSett
 				runtime.Difficulty.Value = Settings.Difficulty;
 			}
 		}, (Func<int>)(() => (!Object.op_Implicit((Object)(object)runtime)) ? Settings.Difficulty : runtime.Difficulty.Value)));
-		list.Add(new MenuEntry("Tecla del panel", array, "Elige la tecla para abrir Local8. Puedes asignar otra tecla o boton desde el panel.", (Action<int>)delegate(int i)
+		list.Add(new MenuEntry("Tecla del panel", array, "Elige la tecla para abrir 8-Player Co-op. Puedes asignar otra tecla o boton desde el panel.", (Action<int>)delegate(int i)
 		{
 			MenuInput.Set(panelKeys[Mathf.Clamp(i, 0, panelKeys.Length - 1)]);
 		}, (Func<int>)(() => Mathf.Max(0, Array.IndexOf(panelKeys, MenuInput.Key)))));
