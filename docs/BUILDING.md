@@ -1,4 +1,4 @@
-# Building Local8
+# Building Hollow Knight 8-Player Co-op
 
 This repository does not include Hollow Knight or Team Cherry assemblies.
 
