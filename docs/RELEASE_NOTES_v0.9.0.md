@@ -1,8 +1,8 @@
-# Hollow Knight Local8 v0.9.0
+# Hollow Knight 8-Player Co-op v0.9.0
 
-This is the first public release of Hollow Knight Local8.
+This is the first public release of Hollow Knight 8-Player Co-op.
 
-Local8 brings 2–8 player local multiplayer to a single shared Hollow Knight game. Everyone plays in the same world, fights the same enemies and bosses, and shares progression while keeping independent controls, health, Soul, HUD and charms.
+Hollow Knight 8-Player Co-op brings 2–8 player local multiplayer to a single shared Hollow Knight game. Everyone plays in the same world, fights the same enemies and bosses, and shares progression while keeping independent controls, health, Soul, HUD and charms.
 
 ## Highlights
 
@@ -21,6 +21,6 @@ Local8 brings 2–8 player local multiplayer to a single shared Hollow Knight ga
 
 ## Status
 
-v0.9.0 is intended to be playable as the first public version, but Local8 is still under active development. Large player counts, unusual game events and compatibility with major content mods may still expose issues.
+v0.9.0 is intended to be playable as the first public version, but Hollow Knight 8-Player Co-op is still under active development. Large player counts, unusual game events and compatibility with major content mods may still expose issues.
 
-Bug reports with a Local8 log and clear reproduction steps are especially useful.
+Bug reports with a mod log and clear reproduction steps are especially useful.
