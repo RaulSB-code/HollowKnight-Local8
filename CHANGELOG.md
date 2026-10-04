@@ -1,10 +1,10 @@
 # Changelog
 
-All notable public changes to Hollow Knight Local8 will be documented here.
+All notable public changes to Hollow Knight 8-Player Co-op will be documented here.
 
 ## v0.9.0 - 2026-10-02
 
-First public release of Hollow Knight Local8.
+First public release of Hollow Knight 8-Player Co-op.
 
 Main features include:
 
