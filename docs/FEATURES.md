@@ -1,114 +1,59 @@
-# Hollow Knight 8-Player Co-op Features
+# Hollow Knight 8-Player Co-op features
 
-This page gives a little more detail about the main multiplayer systems without listing development history or old bug fixes.
+## Shared world and independent players
 
-## Shared game world
+Two to eight local players share scenes, enemies, bosses, NPCs, progression and a save. Each player has their own input, health, SOUL, charm loadout, HUD, colour and supported skin. Controllers, additional keyboard profiles and supported vJoy/DirectInput devices can join a session. Keyboard bindings persist, and keypad input has dedicated Windows handling with fallbacks.
 
-All players exist inside the same Hollow Knight game instance.
+## Roles
 
-They share:
+Nine choices are available: **no role, Mage, Warrior, Healer, Shaman, Explorer, Guardian, Berserker and Summoner**. Several players may choose the same role. The initial choice is saved per slot; reconnecting or changing rooms does not ask again. Roles can be changed through the charm menu near a bench.
 
-- Rooms and transitions.
-- Enemies and bosses.
-- NPCs and world objects.
-- Story and save progression.
-- Important events and encounters.
+| Role | Main effects | Tradeoff |
+| --- | --- | --- |
+| No role | Ordinary co-op behavior | None |
+| Mage | +10% spell damage; nearby successful enemy damage grants 1/32 of a standard SOUL vessel, capped at two drops per second | -10% nail damage |
+| Warrior | +10% nail damage; +15% post-hit invulnerability | -10% spell damage |
+| Healer | A completed focus heals nearby living allies by one mask inside a visible dome | +15% focus time |
+| Shaman | Replaces guaranteed overcharm double damage with a 10% double-damage chance per received hit | The 10% risk also applies without overcharming |
+| Explorer | +10% nail attack speed; -15% dash cooldown | -10% nail damage |
+| Guardian | +1 maximum mask; +15% post-hit invulnerability | -10% movement speed; +10% dash cooldown |
+| Berserker | At half red health or below: +20% nail damage and +10% attack speed | +35% focus time |
+| Summoner | +30% companion and Dreamshield damage | -10% nail and spell damage |
 
-P2–P8 are not separate online game clients. They are added directly to the same running game as P1.
+Role damage bonuses affect enemy damage and retain co-op scaling. PvP mask damage uses its own configured rules. Healing does not resurrect, chain into another heal or heal opposing duel teams. Familiar ownership follows the existing per-player summon system.
 
-## Players
+## Charms and interactions
 
-Each player can have their own:
+Players use their own selectors and equipment panels. Selecting an equipped charm again removes it. The custom panel includes descriptions, notch usage, role selection and bench-range feedback. Overcharming is enabled without requiring a previous single-player unlock; its usual penalties apply unless modified by a role.
 
-- Movement and combat input.
-- Health.
-- Soul.
-- HUD.
-- Color and optional player label.
-- Charm setup.
-- Skin when Custom Knight is available.
+Interaction ownership is routed to the actor using a door, bench, NPC, shop or Stag interface. Native scripted sequences and acquisition cards have recovery handling. Benches support up to three closely spaced seats, native boarding/dismounting, and repeated saves without requiring a room change.
 
-Players can be added or removed during a session.
+## Death, recovery and movement
 
-## Input
+Individual deaths do not remove the party's shared geo or break its SOUL vessel. Whole-party defeat uses the native recoverable Shade and shared broken-vessel state; the HUD displays the missing upper third until native Shade recovery. Optional personal Shades remain configurable.
 
-The mod supports normal controllers and additional keyboard players.
+Revival, safe hazard recovery and automatic respawn are available. The respawn slider spans 10–60 seconds and defaults to 15 seconds for new settings. Dream rescue has a cooldown, movement near screen edges is constrained, and arrival uses a short essence trail. Contextual prompts appear when appropriate.
 
-Up to four keyboard profiles can be active at once, with configurable bindings for each profile. P1 keeps Hollow Knight's normal controls.
+Room waiting/voting can gather the party before ordinary exits. Scripted travel and Pantheon progression have separate handling. Swimming isolates extra players from P1's native water state, supports Isma-enabled acid surfaces, and controls repeated splash audio. SOUL baths refill all valid occupants, including reserve capacity. The final Radiance climb shares the highest verified safe platform only during its ascent phase.
 
-vJoy / DirectInput support is also available for virtual-controller testing.
+## Camera, lighting and encounters
 
-## Camera and group movement
+The adaptive camera smooths movement, uses a visible player anchor when the party spreads out, and gives physical players priority over dream-rescue clouds. Godhome fights use bounded, fixed combat framing with adjustments for compact, wide and vertical arenas. Extra lights and full-visibility options are configurable.
 
-The cooperative camera tries to keep the active group visible and changes zoom depending on how far players are separated.
-
-The mod also contains systems for:
-
-- Waiting for the group during room changes.
-- Recovering players who become separated.
-- Gathering players for important arenas or encounters.
-- Manual dream-style rescue with a visible teleport trail.
-
-## Death and recovery
-
-Players can be knocked down and recovered individually instead of forcing the whole group to restart immediately.
-
-The mod includes multiplayer systems for:
-
-- Respawning.
-- Reviving.
-- Safe recovery positions.
-- Optional Shade behaviour.
-- Rescue between players.
-
-## Difficulty
-
-Enemy damage taken from the group can be scaled according to the number of living players.
-
-Current presets are approximately:
-
-- Easy: 45%
-- Normal: 65%
-- Hard: 85%
-- Extreme: 100%
-
-Players who are currently down do not count as active players for this scaling.
+Encounter entry can gather players inside closing arenas. Boss-hit gathering has been disabled to avoid repeated mid-fight teleports. Boss and arena music guards prevent local death effects from silencing an ongoing fight while retaining genuine phase/scene changes.
 
 ## PvP
 
-The mod includes three main play styles:
+Co-op, friendly fire and round duels remain available. Duels support teams, best-of matches, nail parries, spells and configurable damage sources. Optional arena trips use actual vanilla Godhome stages, including flat arenas, spikes, void, platform layouts and **Markoth with a floor**. Boss spawning and rewards are suppressed only during an owned arena trip.
 
-- Co-op.
-- Friendly Fire.
-- Round Duels.
+Arena configuration includes health, blue masks, starting/capacity SOUL, infinite SOUL, jumps/dashes, movement abilities, spell levels, healing and hazard damage. Adventure state and positions are restored after returning. Timed rounds award the highest remaining health, or team health, with ties drawn. Round time defaults to unlimited; finite rounds show an upper-right timer.
 
-PvP can separately control different damage sources such as nail attacks, spells, Nail Arts and some charm or companion effects.
+Charms are enabled by default, with an option to disable them. Lifeblood/Joni health and supported familiar combat are handled for duels. Companion opponent targeting and destructible Hatchlings apply only to PvP. Geo is hidden during duel rounds and results; countdown and winner text use larger native-font labels.
 
-Round Duels include options for teams, round rules and score tracking.
+## Presentation and configuration
 
-## World interactions
+Nearby crystal-dash launches receive cooperative damage factors of 3.5×, 4.75× and 5.5× for groups of two, three and four or more, with restrained per-player crystal effects. Room changes retain valid individual flight state. Trails clear correctly on death or interruption.
 
-Many systems that normally expect only the original Knight are being adapted so additional players can participate.
+Players use native challenge draw/sheath motions with individual draw sounds. Additional players participate in cooperative ending absorption and dark-ability rituals, with controlled dream/dark essence and cleanup across scene fades. The intact Delicate Flower has a subtle owner-specific soul aura.
 
-This includes work around benches, doors, transitions, NPC interactions, boss arenas, important events and other progression-related systems.
-
-## Lighting and visibility
-
-The mod includes cooperative lighting for dark areas.
-
-Additional player lights can be enabled or disabled, and a Full Visibility option can remove darkness from supported rooms when preferred.
-
-## Configuration
-
-Most multiplayer behaviour can be changed from the F8 menu, including:
-
-- Players and input.
-- Camera behaviour.
-- Difficulty.
-- PvP.
-- Rescue and recovery.
-- Lighting.
-- Performance options.
-- Player identification.
-
-The interface is being translated for Spanish, English, French, German, Italian, Portuguese, Russian, Chinese, Japanese and Korean.
+The configuration interface and role descriptions provide **Spanish, English, French, German, Italian, Portuguese, Russian, Chinese, Japanese and Korean** text, with English fallback. The panel key, player setup, camera, difficulty, PvP, rescue, recovery, lighting and performance options are configurable.
