@@ -8,9 +8,9 @@ assignees: ""
 
 ## Hollow Knight 8-Player Co-op version
 
-Example: v0.9.0
+Example: v0.10.0
 
-If shown in the log, also include the internal build number.
+The DLL/GetVersion should show 0.10.0. Include any different version shown in the startup log.
 
 ## Hollow Knight version
 
