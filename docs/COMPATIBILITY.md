@@ -1,6 +1,8 @@
-# Mod Compatibility
+# Hollow Knight 8-Player Co-op compatibility
 
 Hollow Knight 8-Player Co-op is being developed with compatibility with other Hollow Knight mods in mind.
+
+Current target: **Hollow Knight 1.5.78.11833**, matching Modding API, public **v0.10.0**. Existing settings/save identifiers are preserved.
 
 Compatibility can vary because larger mods may introduce custom rooms, enemies, bosses, interactions and scripted sequences that were not designed for multiple local players.
 
