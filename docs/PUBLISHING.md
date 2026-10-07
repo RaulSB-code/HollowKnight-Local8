@@ -1,73 +1,26 @@
-# Publishing Hollow Knight 8-Player Co-op
+# Publishing Hollow Knight 8-Player Co-op v0.10.0
 
-Checklist for the first public release of Hollow Knight 8-Player Co-op.
+These files are prepared for publication; preparation does not publish a release or update a PR.
 
-## Target release
+## Repository
 
-- Public version: **v0.9.0**
-- Internal release candidate: **build 139**
-- Target Hollow Knight version: **1.5.78.11833**
-- Release package: **HollowKnightLocal8-v0.9.0.zip**
+Use the complete **HollowKnightLocal8-source-v0.10.0.zip** to replace the old source/project/docs tree. Remove obsolete source files before copying the new `src/Core/` and `src/Features/` structure, so duplicate class definitions are not retained. Keep existing Git history, repository settings and any license. Do not add game libraries or compiler output.
 
-## Before making the repository public
+The source package is the exact tree used for the release DLL. Follow [building](BUILDING.md) for reproducible compilation.
 
-- [x] Add the v0.9.0 recovered source tree.
-- [x] Make sure no original Hollow Knight files or Team Cherry assemblies are committed.
-- [x] Remove temporary development files, private paths and unnecessary debug artifacts.
-- [ ] Confirm the project builds from a clean checkout.
-- [ ] Test the final DLL on the target Hollow Knight version.
-- [ ] Test manual installation from the final ZIP.
-- [x] Prepare README and feature documentation.
-- [x] Prepare compatibility documentation.
-- [x] Prepare bug report template.
-- [ ] Decide whether to add a source-code license before publication.
+## GitHub Release
 
-## GitHub Release v0.9.0
+- Tag: **v0.10.0**
+- Title: **Hollow Knight 8-Player Co-op v0.10.0**
+- Installation asset: **HollowKnightLocal8-v0.10.0.zip**
+- Release body: [RELEASE_NOTES_v0.10.0.md](RELEASE_NOTES_v0.10.0.md)
 
-Published on 2026-10-02.
-
-- Release: https://github.com/RaulSB-code/HollowKnight-Local8/releases/tag/v0.9.0
-- Asset: `HollowKnightLocal8-v0.9.0.zip`
-- SHA-256: `4eaf5176d980c1bf9e7d090e66d0657ead5c3d304b115fc21e3779bfef0cdd49`
-
-Release package verified against GitHub's asset digest.
-
-For future releases:
-
-1. Build the exact DLL intended for public distribution.
-2. Rename the public package to:
-   `HollowKnightLocal8-v0.9.0.zip`
-3. Keep the ZIP minimal:
-
-```text
-HollowKnightLocal8-v0.9.0.zip
-└── HollowKnightLocal8.dll
-```
-
-4. Create the GitHub tag:
-   `v0.9.0`
-5. Create the GitHub Release:
-   `Hollow Knight 8-Player Co-op v0.9.0`
-6. Attach the exact ZIP.
-7. Calculate the SHA-256 of that exact uploaded ZIP.
-8. Verify the release download before submitting to ModLinks.
+Upload the supplied ZIP unchanged. It contains only `HollowKnightLocal8.dll`. The SHA-256 in `release/SHA256SUMS.txt` and `release/ModLinks-v0.10.0.xml` is for that exact ZIP. Repacking it changes its checksum. Do not upload the source ZIP as the Lumafly installation asset; source belongs in the repository.
 
 ## ModLinks / Lumafly
 
-Current ModLinks requirements include having the mod source code available in a Git repository.
+Use the prepared manifest in `release/ModLinks-v0.10.0.xml` to update the existing PR after the release asset and source are available.
 
-The ModLinks entry should use:
+Name/DisplayName: **Hollow Knight 8-Player Co-op**. Version: **0.10.0.0**. Preserve repository, README and issue URLs, optional Custom Knight integration, Gameplay and LLM-Assisted tags, and author RaulSB-code. No mandatory mod dependency has been added.
 
-- Name: `Hollow Knight 8-Player Co-op`
-- Display name: `Hollow Knight 8-Player Co-op`
-- Version: `0.9.0.0`
-- GitHub Release download URL for the final ZIP.
-- SHA-256 of that exact ZIP.
-- Repository link to this project.
-- README link.
-- Issues link.
-- Gameplay tag.
-- Custom Knight as an integration.
-- Enemy HP Bar can be documented as recommended; it does not need to be a required dependency.
-
-After the ModLinks pull request is accepted, verify that Hollow Knight 8-Player Co-op appears in Lumafly and performs a clean install.
+Before submitting, confirm the uploaded asset's digest still matches the prepared checksum and that manual installation works on the target game/API.
