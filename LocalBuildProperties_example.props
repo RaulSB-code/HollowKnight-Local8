@@ -1,5 +1,6 @@
 <Project>
   <PropertyGroup>
-    <References>C:\Path\To\Hollow Knight\hollow_knight_Data\Managed</References>
+    <!-- Replace this placeholder locally; do not commit your private path. -->
+    <HKManagedDir>YOUR_HOLLOW_KNIGHT_MANAGED_DIRECTORY</HKManagedDir>
   </PropertyGroup>
 </Project>
