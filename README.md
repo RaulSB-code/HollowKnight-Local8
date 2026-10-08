@@ -34,7 +34,7 @@ Up to four keyboard profiles are supported. Some physical keyboards cannot repor
 
 ## Compatibility
 
-**Custom Knight** is recommended and has dedicated integration for individual player skins. **Enemy HP Bar** is recommended for shared fights. Neither is a required dependency. **Pale Court** support remains experimental; large content mods and unusual scripted scenes still need testing. See [compatibility](docs/COMPATIBILITY.md).
+**Custom Knight** is recommended and has dedicated integration for individual player skins. **Enemy HP Bar** is recommended for shared fights. Neither is a required dependency. Large content mods compatibility and unusual scripted scenes still need testing. See [compatibility](docs/COMPATIBILITY.md).
 
 ## Source and development
 
